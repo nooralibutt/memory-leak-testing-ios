@@ -5,3 +5,10 @@ This repo is to test how memory leaks if you do not properly manage retain cycle
 If we use `myView = MemoryLeakageView(vc: self)` in second view controller, then by pressing share in debug area, we can see that in our memory graph even after closing second view controller, we still see second view controller. Hence memory leak.
 
 but if we use `myView = WeakReferencedView(vc: self)` in second view controller, then by pressing share in debug area, we can see that in our memory graph after closing second view controller, we do not see second view controller.
+
+
+# Sample Code
+<img title="Sample Code Image" alt="Sample Code Image" src="sample.png">
+
+# Memory Leakage
+<img title="Memory Leakage Image Graph" alt="Memory Leakage Image Graph" src="leakage.png">
